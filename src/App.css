@@ -1,0 +1,50 @@
+#root {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.app-div{
+  background-color: rgb(255, 255, 255);
+  width: fit-content;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5rem;
+  border-radius: 20px;
+}
+
+img{
+  height:100px ;
+  width: auto ;
+}
+
+.book{
+  color: black;
+  line-height: 1.5rem;
+}
+figcaption{
+  font-size: 15px;
+}
+
+@media (max-width: 1200px){
+  .app-div {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    gap:1rem;
+  }
+  .books-top{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+  }
+  .top-books{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+  }
+}
